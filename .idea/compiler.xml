@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="CategoryModule" />
+        <module name="IdentityModule" />
+        <module name="QuizModule" />
+        <module name="ReportModule" />
+        <module name="QuestionModule" />
+        <module name="ServiceRegistry" />
+        <module name="ApiGateway" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="UserModule" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ApiGateway" options="-parameters" />
+      <module name="CategoryModule" options="-parameters" />
+      <module name="IdentityModule" options="-parameters" />
+      <module name="QuestionModule" options="-parameters" />
+      <module name="QuizModule" options="-parameters" />
+      <module name="ReportModule" options="-parameters" />
+      <module name="ServiceRegistry" options="-parameters" />
+      <module name="UserModule" options="-parameters" />
+    </option>
+  </component>
+</project>
